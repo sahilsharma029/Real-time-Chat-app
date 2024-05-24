@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="VORA.png">
+    <title>VoraChat- Chat Anonymously. No Login. No Judgment.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <div class="screen join-screen active">
+            <form action="#">
+                <h2>Join VoraChat</h2>
+                <div class="form-input">
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                </div>
+                <div class="form-input">
+                    <button id="join-user">Join</button>
+                </div>
+            </form>
+        </div>
+        <div class="screen chat-screen">
+            <div class="header">
+                <div class="logo">Vora Chat</div>
+                <button id="exit-chat">Exit</button>
+            </div>
+            <div class="messages">
+                <!-- <div class="message my-message">
+                    <div>
+                        <div class="name">You</div>
+                        <div class="text">Hi</div>
+                    </div>
+                </div>
+                <div class="update">Abc is joined conversation</div>
+                <div class="message other-message">
+                    <div>
+                        <div class="name">Abc</div>
+                        <div class="text">Hi</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="typebox">
+                <input type="text" id="message-input">
+                <button id="send-message" type="submit">Send</button>
+            </div>
+        </div>
+    </div>
+    <p class="right-reserved">All right reserved vora 2024</p>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.js"></script>
+    <!-- <script src="socket.io/socket.io.js"></script> ye version inka khtm ho chuka hai isko use mtt krna -->
+    <script src="code.js"></script>
+    
+</body>
+</html>
